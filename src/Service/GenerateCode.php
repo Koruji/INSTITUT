@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Service;
 class GenerateCode {
     public static function code($length = 5) {
         $str = "";
