@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+    <div class="container">
+
+        <a href="{{ app.request.headers.get('referer') ?: path('app_home') }}" class="btn mb-2">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #FFDAB9;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Etape 1</div>
+        </div>
+
+        {{ form_start(form) }}
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}

@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Institut{% endblock %}
+{% block title %}StagePilot{% endblock %}
 {% block header %}
     <div class="d-flex">
-        <a href="#" class="nav-item btn" style="background-color: #FFDAB9;margin-right: 10px;">S'inscrire</a>
+        <a href="{{ path('app_inscription') }}" class="nav-item btn" style="background-color: #FFDAB9;margin-right: 10px;">S'inscrire</a>
         <a href="#" class="nav-item btn" style="background-color: #FFDAB9;">Se connecter</a>
     </div>
 {% endblock %}
